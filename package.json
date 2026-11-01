@@ -4,6 +4,7 @@
   "description": "Safer terminal commands. Smarter execution. Risk analysis and execution guard for VS Code.",
   "version": "0.1.0",
   "publisher": "safexec",
+  "icon": "media/icon.png",
   "engines": {
     "vscode": "^1.85.0"
   },

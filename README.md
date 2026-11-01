@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="media/icon.png" width="160" height="160" alt="Safexec Logo" />
+</p>
+
 # Safexec
 
 > **Safer terminal commands. Smarter execution.**

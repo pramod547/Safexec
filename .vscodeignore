@@ -1,0 +1,13 @@
+.vscode/**
+.vscode-test/**
+src/**
+test/**
+.gitignore
+.git/**
+tsconfig.json
+**/*.ts
+**/*.map
+.systemlens/**
+graph.json
+plan.md
+media/*.jpg

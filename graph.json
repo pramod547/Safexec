@@ -1,12 +1,2089 @@
 {
-  "nodes": [],
-  "edges": [],
+  "nodes": [
+    {
+      "id": "file:out/src/ai/explanationProvider.js",
+      "type": "file",
+      "name": "out/src/ai/explanationProvider.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/src/ai/explanationProvider.js:constructor",
+      "type": "function",
+      "name": "constructor",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ai/explanationProvider.js",
+        "lineno": 7
+      }
+    },
+    {
+      "id": "func:out/src/ai/explanationProvider.js:updateConfig",
+      "type": "function",
+      "name": "updateConfig",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ai/explanationProvider.js",
+        "lineno": 10
+      }
+    },
+    {
+      "id": "func:out/src/ai/explanationProvider.js:getExplanation",
+      "type": "function",
+      "name": "getExplanation",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ai/explanationProvider.js",
+        "lineno": 13
+      }
+    },
+    {
+      "id": "func:out/src/ai/explanationProvider.js:generateDeterministicSummary",
+      "type": "function",
+      "name": "generateDeterministicSummary",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ai/explanationProvider.js",
+        "lineno": 49
+      }
+    },
+    {
+      "id": "file:out/src/ai/secretRedactor.js",
+      "type": "file",
+      "name": "out/src/ai/secretRedactor.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/src/ai/secretRedactor.js:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ai/secretRedactor.js",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:out/src/core/commandParser.js",
+      "type": "file",
+      "name": "out/src/core/commandParser.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/src/core/commandParser.js:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/core/commandParser.js",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:out/src/core/riskEngine.js",
+      "type": "file",
+      "name": "out/src/core/riskEngine.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/src/core/riskEngine.js:constructor",
+      "type": "function",
+      "name": "constructor",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/core/riskEngine.js",
+        "lineno": 14
+      }
+    },
+    {
+      "id": "func:out/src/core/riskEngine.js:analyze",
+      "type": "function",
+      "name": "analyze",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/core/riskEngine.js",
+        "lineno": 25
+      }
+    },
+    {
+      "id": "file:out/src/core/riskScorer.js",
+      "type": "file",
+      "name": "out/src/core/riskScorer.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/src/core/riskScorer.js:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/core/riskScorer.js",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:out/src/core/shellDetector.js",
+      "type": "file",
+      "name": "out/src/core/shellDetector.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/src/core/shellDetector.js:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/core/shellDetector.js",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:out/src/core/types.js",
+      "type": "file",
+      "name": "out/src/core/types.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/src/core/types.js:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/core/types.js",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:out/src/demo.js",
+      "type": "file",
+      "name": "out/src/demo.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/src/demo.js:ownKeys",
+      "type": "function",
+      "name": "ownKeys",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/demo.js",
+        "lineno": 19
+      }
+    },
+    {
+      "id": "func:out/src/demo.js:promptUser",
+      "type": "function",
+      "name": "promptUser",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/demo.js",
+        "lineno": 66
+      }
+    },
+    {
+      "id": "file:out/src/extension.js",
+      "type": "file",
+      "name": "out/src/extension.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/src/extension.js:ownKeys",
+      "type": "function",
+      "name": "ownKeys",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/extension.js",
+        "lineno": 19
+      }
+    },
+    {
+      "id": "func:out/src/extension.js:activate",
+      "type": "function",
+      "name": "activate",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/extension.js",
+        "lineno": 48
+      }
+    },
+    {
+      "id": "func:out/src/extension.js:loadConfig",
+      "type": "function",
+      "name": "loadConfig",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/extension.js",
+        "lineno": 50
+      }
+    },
+    {
+      "id": "func:out/src/extension.js:deactivate",
+      "type": "function",
+      "name": "deactivate",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/extension.js",
+        "lineno": 124
+      }
+    },
+    {
+      "id": "file:out/src/policy/defaultPolicy.js",
+      "type": "file",
+      "name": "out/src/policy/defaultPolicy.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/src/policy/defaultPolicy.js:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/policy/defaultPolicy.js",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:out/src/policy/policyEngine.js",
+      "type": "file",
+      "name": "out/src/policy/policyEngine.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/src/policy/policyEngine.js:constructor",
+      "type": "function",
+      "name": "constructor",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/policy/policyEngine.js",
+        "lineno": 7
+      }
+    },
+    {
+      "id": "func:out/src/policy/policyEngine.js:updateConfig",
+      "type": "function",
+      "name": "updateConfig",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/policy/policyEngine.js",
+        "lineno": 13
+      }
+    },
+    {
+      "id": "func:out/src/policy/policyEngine.js:evaluate",
+      "type": "function",
+      "name": "evaluate",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/policy/policyEngine.js",
+        "lineno": 19
+      }
+    },
+    {
+      "id": "func:out/src/policy/policyEngine.js:getConfig",
+      "type": "function",
+      "name": "getConfig",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/policy/policyEngine.js",
+        "lineno": 32
+      }
+    },
+    {
+      "id": "file:out/src/protection/safeRunner.js",
+      "type": "file",
+      "name": "out/src/protection/safeRunner.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/src/protection/safeRunner.js:ownKeys",
+      "type": "function",
+      "name": "ownKeys",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/protection/safeRunner.js",
+        "lineno": 19
+      }
+    },
+    {
+      "id": "func:out/src/protection/safeRunner.js:constructor",
+      "type": "function",
+      "name": "constructor",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/protection/safeRunner.js",
+        "lineno": 45
+      }
+    },
+    {
+      "id": "func:out/src/protection/safeRunner.js:runProtected",
+      "type": "function",
+      "name": "runProtected",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/protection/safeRunner.js",
+        "lineno": 51
+      }
+    },
+    {
+      "id": "func:out/src/protection/safeRunner.js:analyzeOnly",
+      "type": "function",
+      "name": "analyzeOnly",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/protection/safeRunner.js",
+        "lineno": 151
+      }
+    },
+    {
+      "id": "func:out/src/protection/safeRunner.js:executeInTerminal",
+      "type": "function",
+      "name": "executeInTerminal",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/protection/safeRunner.js",
+        "lineno": 188
+      }
+    },
+    {
+      "id": "file:out/src/protection/terminalMonitor.js",
+      "type": "file",
+      "name": "out/src/protection/terminalMonitor.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/src/protection/terminalMonitor.js:ownKeys",
+      "type": "function",
+      "name": "ownKeys",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/protection/terminalMonitor.js",
+        "lineno": 19
+      }
+    },
+    {
+      "id": "func:out/src/protection/terminalMonitor.js:constructor",
+      "type": "function",
+      "name": "constructor",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/protection/terminalMonitor.js",
+        "lineno": 43
+      }
+    },
+    {
+      "id": "func:out/src/protection/terminalMonitor.js:activate",
+      "type": "function",
+      "name": "activate",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/protection/terminalMonitor.js",
+        "lineno": 47
+      }
+    },
+    {
+      "id": "file:out/src/rules/databaseRules.js",
+      "type": "file",
+      "name": "out/src/rules/databaseRules.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/src/rules/databaseRules.js:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/rules/databaseRules.js",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "table:without",
+      "type": "table",
+      "name": "without",
+      "source_system": "inferred_from_code",
+      "metadata": {
+        "inferred": true
+      }
+    },
+    {
+      "id": "table:table",
+      "type": "table",
+      "name": "table",
+      "source_system": "inferred_from_code",
+      "metadata": {
+        "inferred": true
+      }
+    },
+    {
+      "id": "file:out/src/rules/filesystemRules.js",
+      "type": "file",
+      "name": "out/src/rules/filesystemRules.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/src/rules/filesystemRules.js:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/rules/filesystemRules.js",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:out/src/rules/gitRules.js",
+      "type": "file",
+      "name": "out/src/rules/gitRules.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/src/rules/gitRules.js:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/rules/gitRules.js",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:out/src/rules/networkRules.js",
+      "type": "file",
+      "name": "out/src/rules/networkRules.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/src/rules/networkRules.js:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/rules/networkRules.js",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:out/src/rules/packageRules.js",
+      "type": "file",
+      "name": "out/src/rules/packageRules.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/src/rules/packageRules.js:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/rules/packageRules.js",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:out/src/rules/systemRules.js",
+      "type": "file",
+      "name": "out/src/rules/systemRules.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/src/rules/systemRules.js:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/rules/systemRules.js",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:out/src/storage/auditLogger.js",
+      "type": "file",
+      "name": "out/src/storage/auditLogger.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/src/storage/auditLogger.js:ownKeys",
+      "type": "function",
+      "name": "ownKeys",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/storage/auditLogger.js",
+        "lineno": 19
+      }
+    },
+    {
+      "id": "func:out/src/storage/auditLogger.js:constructor",
+      "type": "function",
+      "name": "constructor",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/storage/auditLogger.js",
+        "lineno": 42
+      }
+    },
+    {
+      "id": "func:out/src/storage/auditLogger.js:log",
+      "type": "function",
+      "name": "log",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/storage/auditLogger.js",
+        "lineno": 45
+      }
+    },
+    {
+      "id": "func:out/src/storage/auditLogger.js:getHistory",
+      "type": "function",
+      "name": "getHistory",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/storage/auditLogger.js",
+        "lineno": 69
+      }
+    },
+    {
+      "id": "func:out/src/storage/auditLogger.js:clearHistory",
+      "type": "function",
+      "name": "clearHistory",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/storage/auditLogger.js",
+        "lineno": 72
+      }
+    },
+    {
+      "id": "func:out/src/storage/auditLogger.js:getStatistics",
+      "type": "function",
+      "name": "getStatistics",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/storage/auditLogger.js",
+        "lineno": 75
+      }
+    },
+    {
+      "id": "file:out/src/ui/dashboard.js",
+      "type": "file",
+      "name": "out/src/ui/dashboard.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/src/ui/dashboard.js:ownKeys",
+      "type": "function",
+      "name": "ownKeys",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ui/dashboard.js",
+        "lineno": 19
+      }
+    },
+    {
+      "id": "func:out/src/ui/dashboard.js:constructor",
+      "type": "function",
+      "name": "constructor",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ui/dashboard.js",
+        "lineno": 43
+      }
+    },
+    {
+      "id": "func:out/src/ui/dashboard.js:update",
+      "type": "function",
+      "name": "update",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ui/dashboard.js",
+        "lineno": 77
+      }
+    },
+    {
+      "id": "func:out/src/ui/dashboard.js:dispose",
+      "type": "function",
+      "name": "dispose",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ui/dashboard.js",
+        "lineno": 82
+      }
+    },
+    {
+      "id": "func:out/src/ui/dashboard.js:getHtmlForWebview",
+      "type": "function",
+      "name": "getHtmlForWebview",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ui/dashboard.js",
+        "lineno": 91
+      }
+    },
+    {
+      "id": "func:out/src/ui/dashboard.js:clearHistory",
+      "type": "function",
+      "name": "clearHistory",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ui/dashboard.js",
+        "lineno": 274
+      }
+    },
+    {
+      "id": "func:out/src/ui/dashboard.js:runProtectedPrompt",
+      "type": "function",
+      "name": "runProtectedPrompt",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ui/dashboard.js",
+        "lineno": 280
+      }
+    },
+    {
+      "id": "func:out/src/ui/dashboard.js:openSettings",
+      "type": "function",
+      "name": "openSettings",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ui/dashboard.js",
+        "lineno": 284
+      }
+    },
+    {
+      "id": "func:out/src/ui/dashboard.js:escapeHtml",
+      "type": "function",
+      "name": "escapeHtml",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ui/dashboard.js",
+        "lineno": 291
+      }
+    },
+    {
+      "id": "file:out/src/ui/findingsView.js",
+      "type": "file",
+      "name": "out/src/ui/findingsView.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/src/ui/findingsView.js:ownKeys",
+      "type": "function",
+      "name": "ownKeys",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ui/findingsView.js",
+        "lineno": 19
+      }
+    },
+    {
+      "id": "func:out/src/ui/findingsView.js:setAnalysis",
+      "type": "function",
+      "name": "setAnalysis",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ui/findingsView.js",
+        "lineno": 42
+      }
+    },
+    {
+      "id": "func:out/src/ui/findingsView.js:getTreeItem",
+      "type": "function",
+      "name": "getTreeItem",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ui/findingsView.js",
+        "lineno": 46
+      }
+    },
+    {
+      "id": "func:out/src/ui/findingsView.js:getChildren",
+      "type": "function",
+      "name": "getChildren",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ui/findingsView.js",
+        "lineno": 49
+      }
+    },
+    {
+      "id": "func:out/src/ui/findingsView.js:constructor",
+      "type": "function",
+      "name": "constructor",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ui/findingsView.js",
+        "lineno": 78
+      }
+    },
+    {
+      "id": "file:out/src/ui/settingsView.js",
+      "type": "file",
+      "name": "out/src/ui/settingsView.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/src/ui/settingsView.js:ownKeys",
+      "type": "function",
+      "name": "ownKeys",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ui/settingsView.js",
+        "lineno": 19
+      }
+    },
+    {
+      "id": "func:out/src/ui/settingsView.js:constructor",
+      "type": "function",
+      "name": "constructor",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ui/settingsView.js",
+        "lineno": 42
+      }
+    },
+    {
+      "id": "func:out/src/ui/settingsView.js:refresh",
+      "type": "function",
+      "name": "refresh",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ui/settingsView.js",
+        "lineno": 45
+      }
+    },
+    {
+      "id": "func:out/src/ui/settingsView.js:getTreeItem",
+      "type": "function",
+      "name": "getTreeItem",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ui/settingsView.js",
+        "lineno": 48
+      }
+    },
+    {
+      "id": "func:out/src/ui/settingsView.js:getChildren",
+      "type": "function",
+      "name": "getChildren",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/src/ui/settingsView.js",
+        "lineno": 51
+      }
+    },
+    {
+      "id": "file:out/test/unit/commandParser.test.js",
+      "type": "file",
+      "name": "out/test/unit/commandParser.test.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/test/unit/commandParser.test.js:ownKeys",
+      "type": "function",
+      "name": "ownKeys",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/test/unit/commandParser.test.js",
+        "lineno": 19
+      }
+    },
+    {
+      "id": "file:out/test/unit/policyEngine.test.js",
+      "type": "file",
+      "name": "out/test/unit/policyEngine.test.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/test/unit/policyEngine.test.js:ownKeys",
+      "type": "function",
+      "name": "ownKeys",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/test/unit/policyEngine.test.js",
+        "lineno": 19
+      }
+    },
+    {
+      "id": "file:out/test/unit/riskScorer.test.js",
+      "type": "file",
+      "name": "out/test/unit/riskScorer.test.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/test/unit/riskScorer.test.js:ownKeys",
+      "type": "function",
+      "name": "ownKeys",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/test/unit/riskScorer.test.js",
+        "lineno": 19
+      }
+    },
+    {
+      "id": "file:out/test/unit/rules.test.js",
+      "type": "file",
+      "name": "out/test/unit/rules.test.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/test/unit/rules.test.js:ownKeys",
+      "type": "function",
+      "name": "ownKeys",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/test/unit/rules.test.js",
+        "lineno": 19
+      }
+    },
+    {
+      "id": "table:sessions",
+      "type": "table",
+      "name": "sessions",
+      "source_system": "inferred_from_code",
+      "metadata": {
+        "inferred": true
+      }
+    },
+    {
+      "id": "file:out/test/unit/secretRedactor.test.js",
+      "type": "file",
+      "name": "out/test/unit/secretRedactor.test.js",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:out/test/unit/secretRedactor.test.js:ownKeys",
+      "type": "function",
+      "name": "ownKeys",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "out/test/unit/secretRedactor.test.js",
+        "lineno": 19
+      }
+    },
+    {
+      "id": "file:src/ai/explanationProvider.ts",
+      "type": "file",
+      "name": "src/ai/explanationProvider.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:src/ai/explanationProvider.ts:constructor",
+      "type": "function",
+      "name": "constructor",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/ai/explanationProvider.ts",
+        "lineno": 7
+      }
+    },
+    {
+      "id": "file:src/ai/secretRedactor.ts",
+      "type": "file",
+      "name": "src/ai/secretRedactor.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:src/ai/secretRedactor.ts:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/ai/secretRedactor.ts",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:src/core/commandParser.ts",
+      "type": "file",
+      "name": "src/core/commandParser.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:src/core/commandParser.ts:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/core/commandParser.ts",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:src/core/riskEngine.ts",
+      "type": "file",
+      "name": "src/core/riskEngine.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:src/core/riskEngine.ts:constructor",
+      "type": "function",
+      "name": "constructor",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/core/riskEngine.ts",
+        "lineno": 14
+      }
+    },
+    {
+      "id": "file:src/core/riskScorer.ts",
+      "type": "file",
+      "name": "src/core/riskScorer.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:src/core/riskScorer.ts:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/core/riskScorer.ts",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:src/core/shellDetector.ts",
+      "type": "file",
+      "name": "src/core/shellDetector.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:src/core/shellDetector.ts:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/core/shellDetector.ts",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:src/core/types.ts",
+      "type": "file",
+      "name": "src/core/types.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:src/core/types.ts:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/core/types.ts",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:src/demo.ts",
+      "type": "file",
+      "name": "src/demo.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:src/demo.ts:promptUser",
+      "type": "function",
+      "name": "promptUser",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/demo.ts",
+        "lineno": 37
+      }
+    },
+    {
+      "id": "file:src/extension.ts",
+      "type": "file",
+      "name": "src/extension.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:src/extension.ts:activate",
+      "type": "function",
+      "name": "activate",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/extension.ts",
+        "lineno": 13
+      }
+    },
+    {
+      "id": "func:src/extension.ts:deactivate",
+      "type": "function",
+      "name": "deactivate",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/extension.ts",
+        "lineno": 114
+      }
+    },
+    {
+      "id": "file:src/policy/defaultPolicy.ts",
+      "type": "file",
+      "name": "src/policy/defaultPolicy.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:src/policy/defaultPolicy.ts:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/policy/defaultPolicy.ts",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:src/policy/policyEngine.ts",
+      "type": "file",
+      "name": "src/policy/policyEngine.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:src/policy/policyEngine.ts:constructor",
+      "type": "function",
+      "name": "constructor",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/policy/policyEngine.ts",
+        "lineno": 7
+      }
+    },
+    {
+      "id": "file:src/protection/safeRunner.ts",
+      "type": "file",
+      "name": "src/protection/safeRunner.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:src/protection/safeRunner.ts:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/protection/safeRunner.ts",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:src/protection/terminalMonitor.ts",
+      "type": "file",
+      "name": "src/protection/terminalMonitor.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:src/protection/terminalMonitor.ts:constructor",
+      "type": "function",
+      "name": "constructor",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/protection/terminalMonitor.ts",
+        "lineno": 11
+      }
+    },
+    {
+      "id": "file:src/rules/databaseRules.ts",
+      "type": "file",
+      "name": "src/rules/databaseRules.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:src/rules/databaseRules.ts:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/rules/databaseRules.ts",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:src/rules/filesystemRules.ts",
+      "type": "file",
+      "name": "src/rules/filesystemRules.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:src/rules/filesystemRules.ts:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/rules/filesystemRules.ts",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:src/rules/gitRules.ts",
+      "type": "file",
+      "name": "src/rules/gitRules.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:src/rules/gitRules.ts:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/rules/gitRules.ts",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:src/rules/networkRules.ts",
+      "type": "file",
+      "name": "src/rules/networkRules.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:src/rules/networkRules.ts:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/rules/networkRules.ts",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:src/rules/packageRules.ts",
+      "type": "file",
+      "name": "src/rules/packageRules.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:src/rules/packageRules.ts:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/rules/packageRules.ts",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:src/rules/systemRules.ts",
+      "type": "file",
+      "name": "src/rules/systemRules.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:src/rules/systemRules.ts:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/rules/systemRules.ts",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:src/storage/auditLogger.ts",
+      "type": "file",
+      "name": "src/storage/auditLogger.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:src/storage/auditLogger.ts:constructor",
+      "type": "function",
+      "name": "constructor",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/storage/auditLogger.ts",
+        "lineno": 9
+      }
+    },
+    {
+      "id": "file:src/ui/dashboard.ts",
+      "type": "file",
+      "name": "src/ui/dashboard.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:src/ui/dashboard.ts:clearHistory",
+      "type": "function",
+      "name": "clearHistory",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/ui/dashboard.ts",
+        "lineno": 270
+      }
+    },
+    {
+      "id": "func:src/ui/dashboard.ts:runProtectedPrompt",
+      "type": "function",
+      "name": "runProtectedPrompt",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/ui/dashboard.ts",
+        "lineno": 276
+      }
+    },
+    {
+      "id": "func:src/ui/dashboard.ts:openSettings",
+      "type": "function",
+      "name": "openSettings",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/ui/dashboard.ts",
+        "lineno": 280
+      }
+    },
+    {
+      "id": "file:src/ui/findingsView.ts",
+      "type": "file",
+      "name": "src/ui/findingsView.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:src/ui/findingsView.ts:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/ui/findingsView.ts",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:src/ui/settingsView.ts",
+      "type": "file",
+      "name": "src/ui/settingsView.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:src/ui/settingsView.ts:constructor",
+      "type": "function",
+      "name": "constructor",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "src/ui/settingsView.ts",
+        "lineno": 14
+      }
+    },
+    {
+      "id": "file:test/unit/commandParser.test.ts",
+      "type": "file",
+      "name": "test/unit/commandParser.test.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:test/unit/commandParser.test.ts:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "test/unit/commandParser.test.ts",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:test/unit/policyEngine.test.ts",
+      "type": "file",
+      "name": "test/unit/policyEngine.test.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:test/unit/policyEngine.test.ts:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "test/unit/policyEngine.test.ts",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:test/unit/riskScorer.test.ts",
+      "type": "file",
+      "name": "test/unit/riskScorer.test.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:test/unit/riskScorer.test.ts:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "test/unit/riskScorer.test.ts",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:test/unit/rules.test.ts",
+      "type": "file",
+      "name": "test/unit/rules.test.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:test/unit/rules.test.ts:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "test/unit/rules.test.ts",
+        "lineno": 1
+      }
+    },
+    {
+      "id": "file:test/unit/secretRedactor.test.ts",
+      "type": "file",
+      "name": "test/unit/secretRedactor.test.ts",
+      "source_system": "javascript"
+    },
+    {
+      "id": "func:test/unit/secretRedactor.test.ts:<module>",
+      "type": "function",
+      "name": "<module>",
+      "source_system": "javascript",
+      "metadata": {
+        "file": "test/unit/secretRedactor.test.ts",
+        "lineno": 1
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "func:out/src/ai/explanationProvider.js:constructor",
+      "target": "file:out/src/ai/explanationProvider.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ai/explanationProvider.js:7"
+    },
+    {
+      "source": "func:out/src/ai/explanationProvider.js:updateConfig",
+      "target": "file:out/src/ai/explanationProvider.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ai/explanationProvider.js:10"
+    },
+    {
+      "source": "func:out/src/ai/explanationProvider.js:getExplanation",
+      "target": "file:out/src/ai/explanationProvider.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ai/explanationProvider.js:13"
+    },
+    {
+      "source": "func:out/src/ai/explanationProvider.js:generateDeterministicSummary",
+      "target": "file:out/src/ai/explanationProvider.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ai/explanationProvider.js:49"
+    },
+    {
+      "source": "func:out/src/ai/secretRedactor.js:<module>",
+      "target": "file:out/src/ai/secretRedactor.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ai/secretRedactor.js:1"
+    },
+    {
+      "source": "func:out/src/core/commandParser.js:<module>",
+      "target": "file:out/src/core/commandParser.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/core/commandParser.js:1"
+    },
+    {
+      "source": "func:out/src/core/riskEngine.js:constructor",
+      "target": "file:out/src/core/riskEngine.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/core/riskEngine.js:14"
+    },
+    {
+      "source": "func:out/src/core/riskEngine.js:analyze",
+      "target": "file:out/src/core/riskEngine.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/core/riskEngine.js:25"
+    },
+    {
+      "source": "func:out/src/core/riskScorer.js:<module>",
+      "target": "file:out/src/core/riskScorer.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/core/riskScorer.js:1"
+    },
+    {
+      "source": "func:out/src/core/shellDetector.js:<module>",
+      "target": "file:out/src/core/shellDetector.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/core/shellDetector.js:1"
+    },
+    {
+      "source": "func:out/src/core/types.js:<module>",
+      "target": "file:out/src/core/types.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/core/types.js:1"
+    },
+    {
+      "source": "func:out/src/demo.js:ownKeys",
+      "target": "file:out/src/demo.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/demo.js:19"
+    },
+    {
+      "source": "func:out/src/demo.js:promptUser",
+      "target": "file:out/src/demo.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/demo.js:66"
+    },
+    {
+      "source": "func:out/src/extension.js:ownKeys",
+      "target": "file:out/src/extension.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/extension.js:19"
+    },
+    {
+      "source": "func:out/src/extension.js:activate",
+      "target": "file:out/src/extension.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/extension.js:48"
+    },
+    {
+      "source": "func:out/src/extension.js:loadConfig",
+      "target": "file:out/src/extension.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/extension.js:50"
+    },
+    {
+      "source": "func:out/src/extension.js:deactivate",
+      "target": "file:out/src/extension.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/extension.js:124"
+    },
+    {
+      "source": "func:out/src/policy/defaultPolicy.js:<module>",
+      "target": "file:out/src/policy/defaultPolicy.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/policy/defaultPolicy.js:1"
+    },
+    {
+      "source": "func:out/src/policy/policyEngine.js:constructor",
+      "target": "file:out/src/policy/policyEngine.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/policy/policyEngine.js:7"
+    },
+    {
+      "source": "func:out/src/policy/policyEngine.js:updateConfig",
+      "target": "file:out/src/policy/policyEngine.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/policy/policyEngine.js:13"
+    },
+    {
+      "source": "func:out/src/policy/policyEngine.js:evaluate",
+      "target": "file:out/src/policy/policyEngine.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/policy/policyEngine.js:19"
+    },
+    {
+      "source": "func:out/src/policy/policyEngine.js:getConfig",
+      "target": "file:out/src/policy/policyEngine.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/policy/policyEngine.js:32"
+    },
+    {
+      "source": "func:out/src/protection/safeRunner.js:ownKeys",
+      "target": "file:out/src/protection/safeRunner.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/protection/safeRunner.js:19"
+    },
+    {
+      "source": "func:out/src/protection/safeRunner.js:constructor",
+      "target": "file:out/src/protection/safeRunner.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/protection/safeRunner.js:45"
+    },
+    {
+      "source": "func:out/src/protection/safeRunner.js:runProtected",
+      "target": "file:out/src/protection/safeRunner.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/protection/safeRunner.js:51"
+    },
+    {
+      "source": "func:out/src/protection/safeRunner.js:analyzeOnly",
+      "target": "file:out/src/protection/safeRunner.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/protection/safeRunner.js:151"
+    },
+    {
+      "source": "func:out/src/protection/safeRunner.js:executeInTerminal",
+      "target": "file:out/src/protection/safeRunner.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/protection/safeRunner.js:188"
+    },
+    {
+      "source": "func:out/src/protection/terminalMonitor.js:ownKeys",
+      "target": "file:out/src/protection/terminalMonitor.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/protection/terminalMonitor.js:19"
+    },
+    {
+      "source": "func:out/src/protection/terminalMonitor.js:constructor",
+      "target": "file:out/src/protection/terminalMonitor.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/protection/terminalMonitor.js:43"
+    },
+    {
+      "source": "func:out/src/protection/terminalMonitor.js:activate",
+      "target": "file:out/src/protection/terminalMonitor.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/protection/terminalMonitor.js:47"
+    },
+    {
+      "source": "func:out/src/rules/databaseRules.js:<module>",
+      "target": "file:out/src/rules/databaseRules.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/rules/databaseRules.js:1"
+    },
+    {
+      "source": "func:out/src/rules/databaseRules.js:<module>",
+      "target": "table:without",
+      "type": "static_sql_string",
+      "confidence": 0.96,
+      "evidence": "Executes DELETE FROM without a WHERE clause, which deletes all rows in the table"
+    },
+    {
+      "source": "func:out/src/rules/databaseRules.js:<module>",
+      "target": "table:table",
+      "type": "static_sql_string",
+      "confidence": 0.96,
+      "evidence": "Run a SELECT count(*) first with the intended condition.'\n        ],\n        eva"
+    },
+    {
+      "source": "func:out/src/rules/filesystemRules.js:<module>",
+      "target": "file:out/src/rules/filesystemRules.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/rules/filesystemRules.js:1"
+    },
+    {
+      "source": "func:out/src/rules/gitRules.js:<module>",
+      "target": "file:out/src/rules/gitRules.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/rules/gitRules.js:1"
+    },
+    {
+      "source": "func:out/src/rules/networkRules.js:<module>",
+      "target": "file:out/src/rules/networkRules.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/rules/networkRules.js:1"
+    },
+    {
+      "source": "func:out/src/rules/packageRules.js:<module>",
+      "target": "file:out/src/rules/packageRules.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/rules/packageRules.js:1"
+    },
+    {
+      "source": "func:out/src/rules/systemRules.js:<module>",
+      "target": "file:out/src/rules/systemRules.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/rules/systemRules.js:1"
+    },
+    {
+      "source": "func:out/src/storage/auditLogger.js:ownKeys",
+      "target": "file:out/src/storage/auditLogger.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/storage/auditLogger.js:19"
+    },
+    {
+      "source": "func:out/src/storage/auditLogger.js:constructor",
+      "target": "file:out/src/storage/auditLogger.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/storage/auditLogger.js:42"
+    },
+    {
+      "source": "func:out/src/storage/auditLogger.js:log",
+      "target": "file:out/src/storage/auditLogger.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/storage/auditLogger.js:45"
+    },
+    {
+      "source": "func:out/src/storage/auditLogger.js:getHistory",
+      "target": "file:out/src/storage/auditLogger.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/storage/auditLogger.js:69"
+    },
+    {
+      "source": "func:out/src/storage/auditLogger.js:clearHistory",
+      "target": "file:out/src/storage/auditLogger.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/storage/auditLogger.js:72"
+    },
+    {
+      "source": "func:out/src/storage/auditLogger.js:getStatistics",
+      "target": "file:out/src/storage/auditLogger.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/storage/auditLogger.js:75"
+    },
+    {
+      "source": "func:out/src/ui/dashboard.js:ownKeys",
+      "target": "file:out/src/ui/dashboard.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ui/dashboard.js:19"
+    },
+    {
+      "source": "func:out/src/ui/dashboard.js:constructor",
+      "target": "file:out/src/ui/dashboard.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ui/dashboard.js:43"
+    },
+    {
+      "source": "func:out/src/ui/dashboard.js:update",
+      "target": "file:out/src/ui/dashboard.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ui/dashboard.js:77"
+    },
+    {
+      "source": "func:out/src/ui/dashboard.js:dispose",
+      "target": "file:out/src/ui/dashboard.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ui/dashboard.js:82"
+    },
+    {
+      "source": "func:out/src/ui/dashboard.js:getHtmlForWebview",
+      "target": "file:out/src/ui/dashboard.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ui/dashboard.js:91"
+    },
+    {
+      "source": "func:out/src/ui/dashboard.js:clearHistory",
+      "target": "file:out/src/ui/dashboard.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ui/dashboard.js:274"
+    },
+    {
+      "source": "func:out/src/ui/dashboard.js:runProtectedPrompt",
+      "target": "file:out/src/ui/dashboard.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ui/dashboard.js:280"
+    },
+    {
+      "source": "func:out/src/ui/dashboard.js:openSettings",
+      "target": "file:out/src/ui/dashboard.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ui/dashboard.js:284"
+    },
+    {
+      "source": "func:out/src/ui/dashboard.js:escapeHtml",
+      "target": "file:out/src/ui/dashboard.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ui/dashboard.js:291"
+    },
+    {
+      "source": "func:out/src/ui/findingsView.js:ownKeys",
+      "target": "file:out/src/ui/findingsView.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ui/findingsView.js:19"
+    },
+    {
+      "source": "func:out/src/ui/findingsView.js:setAnalysis",
+      "target": "file:out/src/ui/findingsView.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ui/findingsView.js:42"
+    },
+    {
+      "source": "func:out/src/ui/findingsView.js:getTreeItem",
+      "target": "file:out/src/ui/findingsView.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ui/findingsView.js:46"
+    },
+    {
+      "source": "func:out/src/ui/findingsView.js:getChildren",
+      "target": "file:out/src/ui/findingsView.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ui/findingsView.js:49"
+    },
+    {
+      "source": "func:out/src/ui/findingsView.js:constructor",
+      "target": "file:out/src/ui/findingsView.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ui/findingsView.js:78"
+    },
+    {
+      "source": "func:out/src/ui/settingsView.js:ownKeys",
+      "target": "file:out/src/ui/settingsView.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ui/settingsView.js:19"
+    },
+    {
+      "source": "func:out/src/ui/settingsView.js:constructor",
+      "target": "file:out/src/ui/settingsView.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ui/settingsView.js:42"
+    },
+    {
+      "source": "func:out/src/ui/settingsView.js:refresh",
+      "target": "file:out/src/ui/settingsView.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ui/settingsView.js:45"
+    },
+    {
+      "source": "func:out/src/ui/settingsView.js:getTreeItem",
+      "target": "file:out/src/ui/settingsView.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ui/settingsView.js:48"
+    },
+    {
+      "source": "func:out/src/ui/settingsView.js:getChildren",
+      "target": "file:out/src/ui/settingsView.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ui/settingsView.js:51"
+    },
+    {
+      "source": "func:out/src/ui/settingsView.js:constructor",
+      "target": "file:out/src/ui/settingsView.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/src/ui/settingsView.js:74"
+    },
+    {
+      "source": "func:out/test/unit/commandParser.test.js:ownKeys",
+      "target": "file:out/test/unit/commandParser.test.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/test/unit/commandParser.test.js:19"
+    },
+    {
+      "source": "func:out/test/unit/policyEngine.test.js:ownKeys",
+      "target": "file:out/test/unit/policyEngine.test.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/test/unit/policyEngine.test.js:19"
+    },
+    {
+      "source": "func:out/test/unit/riskScorer.test.js:ownKeys",
+      "target": "file:out/test/unit/riskScorer.test.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/test/unit/riskScorer.test.js:19"
+    },
+    {
+      "source": "func:out/test/unit/rules.test.js:ownKeys",
+      "target": "file:out/test/unit/rules.test.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/test/unit/rules.test.js:19"
+    },
+    {
+      "source": "func:out/test/unit/rules.test.js:ownKeys",
+      "target": "table:without",
+      "type": "static_sql_string",
+      "confidence": 0.96,
+      "evidence": "detects DELETE FROM without WHERE as high risk"
+    },
+    {
+      "source": "func:out/test/unit/rules.test.js:ownKeys",
+      "target": "table:sessions",
+      "type": "static_sql_string",
+      "confidence": 0.96,
+      "evidence": "DELETE FROM sessions;"
+    },
+    {
+      "source": "func:out/test/unit/secretRedactor.test.js:ownKeys",
+      "target": "file:out/test/unit/secretRedactor.test.js",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in out/test/unit/secretRedactor.test.js:19"
+    },
+    {
+      "source": "func:src/ai/explanationProvider.ts:constructor",
+      "target": "file:src/ai/explanationProvider.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/ai/explanationProvider.ts:7"
+    },
+    {
+      "source": "func:src/ai/secretRedactor.ts:<module>",
+      "target": "file:src/ai/secretRedactor.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/ai/secretRedactor.ts:1"
+    },
+    {
+      "source": "func:src/core/commandParser.ts:<module>",
+      "target": "file:src/core/commandParser.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/core/commandParser.ts:1"
+    },
+    {
+      "source": "func:src/core/riskEngine.ts:constructor",
+      "target": "file:src/core/riskEngine.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/core/riskEngine.ts:14"
+    },
+    {
+      "source": "func:src/core/riskScorer.ts:<module>",
+      "target": "file:src/core/riskScorer.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/core/riskScorer.ts:1"
+    },
+    {
+      "source": "func:src/core/shellDetector.ts:<module>",
+      "target": "file:src/core/shellDetector.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/core/shellDetector.ts:1"
+    },
+    {
+      "source": "func:src/core/types.ts:<module>",
+      "target": "file:src/core/types.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/core/types.ts:1"
+    },
+    {
+      "source": "func:src/demo.ts:promptUser",
+      "target": "file:src/demo.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/demo.ts:37"
+    },
+    {
+      "source": "func:src/extension.ts:activate",
+      "target": "file:src/extension.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/extension.ts:13"
+    },
+    {
+      "source": "func:src/extension.ts:deactivate",
+      "target": "file:src/extension.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/extension.ts:114"
+    },
+    {
+      "source": "func:src/policy/defaultPolicy.ts:<module>",
+      "target": "file:src/policy/defaultPolicy.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/policy/defaultPolicy.ts:1"
+    },
+    {
+      "source": "func:src/policy/policyEngine.ts:constructor",
+      "target": "file:src/policy/policyEngine.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/policy/policyEngine.ts:7"
+    },
+    {
+      "source": "func:src/protection/safeRunner.ts:<module>",
+      "target": "file:src/protection/safeRunner.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/protection/safeRunner.ts:1"
+    },
+    {
+      "source": "func:src/protection/terminalMonitor.ts:constructor",
+      "target": "file:src/protection/terminalMonitor.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/protection/terminalMonitor.ts:11"
+    },
+    {
+      "source": "func:src/rules/databaseRules.ts:<module>",
+      "target": "file:src/rules/databaseRules.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/rules/databaseRules.ts:1"
+    },
+    {
+      "source": "func:src/rules/databaseRules.ts:<module>",
+      "target": "table:without",
+      "type": "static_sql_string",
+      "confidence": 0.96,
+      "evidence": "Executes DELETE FROM without a WHERE clause, which deletes all rows in the table"
+    },
+    {
+      "source": "func:src/rules/databaseRules.ts:<module>",
+      "target": "table:table",
+      "type": "static_sql_string",
+      "confidence": 0.96,
+      "evidence": "Run a SELECT count(*) first with the intended condition.'\n    ],\n    evaluate: ("
+    },
+    {
+      "source": "func:src/rules/filesystemRules.ts:<module>",
+      "target": "file:src/rules/filesystemRules.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/rules/filesystemRules.ts:1"
+    },
+    {
+      "source": "func:src/rules/gitRules.ts:<module>",
+      "target": "file:src/rules/gitRules.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/rules/gitRules.ts:1"
+    },
+    {
+      "source": "func:src/rules/networkRules.ts:<module>",
+      "target": "file:src/rules/networkRules.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/rules/networkRules.ts:1"
+    },
+    {
+      "source": "func:src/rules/packageRules.ts:<module>",
+      "target": "file:src/rules/packageRules.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/rules/packageRules.ts:1"
+    },
+    {
+      "source": "func:src/rules/systemRules.ts:<module>",
+      "target": "file:src/rules/systemRules.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/rules/systemRules.ts:1"
+    },
+    {
+      "source": "func:src/storage/auditLogger.ts:constructor",
+      "target": "file:src/storage/auditLogger.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/storage/auditLogger.ts:9"
+    },
+    {
+      "source": "func:src/ui/dashboard.ts:clearHistory",
+      "target": "file:src/ui/dashboard.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/ui/dashboard.ts:270"
+    },
+    {
+      "source": "func:src/ui/dashboard.ts:runProtectedPrompt",
+      "target": "file:src/ui/dashboard.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/ui/dashboard.ts:276"
+    },
+    {
+      "source": "func:src/ui/dashboard.ts:openSettings",
+      "target": "file:src/ui/dashboard.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/ui/dashboard.ts:280"
+    },
+    {
+      "source": "func:src/ui/findingsView.ts:<module>",
+      "target": "file:src/ui/findingsView.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/ui/findingsView.ts:1"
+    },
+    {
+      "source": "func:src/ui/settingsView.ts:constructor",
+      "target": "file:src/ui/settingsView.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in src/ui/settingsView.ts:14"
+    },
+    {
+      "source": "func:test/unit/commandParser.test.ts:<module>",
+      "target": "file:test/unit/commandParser.test.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in test/unit/commandParser.test.ts:1"
+    },
+    {
+      "source": "func:test/unit/policyEngine.test.ts:<module>",
+      "target": "file:test/unit/policyEngine.test.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in test/unit/policyEngine.test.ts:1"
+    },
+    {
+      "source": "func:test/unit/riskScorer.test.ts:<module>",
+      "target": "file:test/unit/riskScorer.test.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in test/unit/riskScorer.test.ts:1"
+    },
+    {
+      "source": "func:test/unit/rules.test.ts:<module>",
+      "target": "file:test/unit/rules.test.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in test/unit/rules.test.ts:1"
+    },
+    {
+      "source": "func:test/unit/rules.test.ts:<module>",
+      "target": "table:without",
+      "type": "static_sql_string",
+      "confidence": 0.96,
+      "evidence": "detects DELETE FROM without WHERE as high risk"
+    },
+    {
+      "source": "func:test/unit/rules.test.ts:<module>",
+      "target": "table:sessions",
+      "type": "static_sql_string",
+      "confidence": 0.96,
+      "evidence": "DELETE FROM sessions;"
+    },
+    {
+      "source": "func:test/unit/secretRedactor.test.ts:<module>",
+      "target": "file:test/unit/secretRedactor.test.ts",
+      "type": "structural_belongs_to",
+      "confidence": 1,
+      "evidence": "in test/unit/secretRedactor.test.ts:1"
+    }
+  ],
   "metrics": {
-    "total_nodes": 0,
-    "total_edges": 0,
+    "total_nodes": 156,
+    "total_edges": 106,
     "code_to_db": {
-      "total_access_calls": 0,
-      "static_sql_count": 0,
+      "total_access_calls": 8,
+      "static_sql_count": 8,
       "orm_call_count": 0,
       "dynamic_unresolved_count": 0,
       "dynamic_unresolved_ratio": 0

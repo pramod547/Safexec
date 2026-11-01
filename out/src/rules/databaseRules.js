@@ -14,7 +14,7 @@ exports.databaseRules = [
         ],
         evaluate: (segment) => {
             const raw = segment.raw;
-            const dropDbMatch = raw.match(/\bDROP\s+(DATABASE|SCHEMA)\s+([`"']?[A-Za-z0-9_]+[`"']?)/i);
+            const dropDbMatch = raw.match(/\bDROP\s+(DATABASE|SCHEMA)\s+(?:IF\s+EXISTS\s+)?([`"']?[A-Za-z0-9_]+[`"']?)/i);
             if (dropDbMatch) {
                 return {
                     id: 'DB001',
@@ -46,7 +46,7 @@ exports.databaseRules = [
         ],
         evaluate: (segment) => {
             const raw = segment.raw;
-            const dropTableMatch = raw.match(/\b(DROP\s+TABLE|TRUNCATE\s+TABLE|TRUNCATE)\s+([`"']?[A-Za-z0-9_]+[`"']?)/i);
+            const dropTableMatch = raw.match(/\b(DROP\s+TABLE|TRUNCATE\s+TABLE|TRUNCATE)\s+(?:IF\s+EXISTS\s+)?([`"']?[A-Za-z0-9_]+[`"']?)/i);
             if (dropTableMatch) {
                 return {
                     id: 'DB002',

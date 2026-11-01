@@ -56,7 +56,7 @@ class ShellDetector {
             }
         }
         // 3. Check environment variables
-        const shellEnv = (process.env.SHELL || process.env.ComSpec || '').toLowerCase();
+        const shellEnv = (process.env.SHELL || '').toLowerCase();
         if (shellEnv.includes('zsh'))
             return 'zsh';
         if (shellEnv.includes('bash'))
@@ -67,6 +67,9 @@ class ShellDetector {
             return 'cmd';
         // 4. Default based on platform
         if (platform === 'win32') {
+            if (process.env.PSModulePath || process.env.POWERSHELL_DISTRIBUTION_CHANNEL) {
+                return 'powershell';
+            }
             return 'powershell';
         }
         else if (platform === 'darwin') {

@@ -50,21 +50,24 @@ export class ShellDetector {
         }
       }
 
-      // 3. Check environment variables
-      const shellEnv = (process.env.SHELL || process.env.ComSpec || '').toLowerCase();
-      if (shellEnv.includes('zsh')) return 'zsh';
-      if (shellEnv.includes('bash')) return 'bash';
-      if (shellEnv.includes('pwsh') || shellEnv.includes('powershell')) return 'powershell';
-      if (shellEnv.includes('cmd.exe')) return 'cmd';
+    // 3. Check environment variables
+    const shellEnv = (process.env.SHELL || '').toLowerCase();
+    if (shellEnv.includes('zsh')) return 'zsh';
+    if (shellEnv.includes('bash')) return 'bash';
+    if (shellEnv.includes('pwsh') || shellEnv.includes('powershell')) return 'powershell';
+    if (shellEnv.includes('cmd.exe')) return 'cmd';
 
-      // 4. Default based on platform
-      if (platform === 'win32') {
+    // 4. Default based on platform
+    if (platform === 'win32') {
+      if (process.env.PSModulePath || process.env.POWERSHELL_DISTRIBUTION_CHANNEL) {
         return 'powershell';
-      } else if (platform === 'darwin') {
-        return 'zsh';
-      } else if (platform === 'linux') {
-        return 'bash';
       }
+      return 'powershell';
+    } else if (platform === 'darwin') {
+      return 'zsh';
+    } else if (platform === 'linux') {
+      return 'bash';
+    }
 
       return 'unknown';
     }

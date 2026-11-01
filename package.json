@@ -140,6 +140,7 @@
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
+    "test": "mocha -r ts-node/register \"test/unit/**/*.test.ts\"",
     "demo": "tsc -p ./ && node out/src/demo.js"
   },
   "devDependencies": {

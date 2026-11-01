@@ -17,7 +17,7 @@ exports.networkRules = [
             const rawFull = fullCommand.raw.toLowerCase();
             // Check pipe patterns in compound or full command:
             // curl ... | bash, wget ... | sh, irm ... | iex
-            const pipeMatch = /(curl|wget|fetch|invoke-webrequest|iwr|invoke-restmethod|irm)\b[^|;&]*\|\s*(bash|sh|zsh|dash|ksh|python|perl|powershell|pwsh|invoke-expression|iex)\b/i.test(rawFull);
+            const pipeMatch = /(curl|wget|fetch|invoke-webrequest|iwr|invoke-restmethod|irm)\b[^|;&]*\|\s*(?:sudo\s+)?(bash|sh|zsh|dash|ksh|python|perl|powershell|pwsh|invoke-expression|iex)\b/i.test(rawFull);
             if (pipeMatch) {
                 return {
                     id: 'NET001',

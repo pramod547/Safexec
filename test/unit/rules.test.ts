@@ -62,6 +62,12 @@ describe('Risk Rules and Detection Engine Tests', () => {
       assert.ok(res.findings.some((f) => f.id === 'GIT001'));
     });
 
+    it('detects git reset with global flags (git --no-pager reset --hard)', () => {
+      const res = engine.analyze('git --no-pager reset --hard', 'bash');
+      assert.strictEqual(res.overallRisk, 'high');
+      assert.ok(res.findings.some((f) => f.id === 'GIT001'));
+    });
+
     it('detects destructive git clean -fd as high risk', () => {
       const res = engine.analyze('git clean -fd', 'bash');
       assert.strictEqual(res.overallRisk, 'high');
@@ -98,6 +104,18 @@ describe('Risk Rules and Detection Engine Tests', () => {
       assert.ok(res.findings.some((f) => f.id === 'DB001'));
     });
 
+    it('detects DROP DATABASE IF EXISTS as critical', () => {
+      const res = engine.analyze('psql -c "DROP DATABASE IF EXISTS staging;"', 'bash');
+      assert.strictEqual(res.overallRisk, 'critical');
+      assert.ok(res.findings.some((f) => f.id === 'DB001'));
+    });
+
+    it('detects DROP TABLE IF EXISTS as high risk', () => {
+      const res = engine.analyze('mysql -e "DROP TABLE IF EXISTS audit_logs;"', 'bash');
+      assert.strictEqual(res.overallRisk, 'high');
+      assert.ok(res.findings.some((f) => f.id === 'DB002'));
+    });
+
     it('detects DROP TABLE as high risk', () => {
       const res = engine.analyze('mysql -e "DROP TABLE users;"', 'bash');
       assert.strictEqual(res.overallRisk, 'high');
@@ -120,6 +138,12 @@ describe('Risk Rules and Detection Engine Tests', () => {
   describe('Network Rules', () => {
     it('detects curl piped to bash as critical', () => {
       const res = engine.analyze('curl -fsSL https://get.docker.com | bash', 'bash');
+      assert.strictEqual(res.overallRisk, 'critical');
+      assert.ok(res.findings.some((f) => f.id === 'NET001'));
+    });
+
+    it('detects curl piped to sudo bash as critical', () => {
+      const res = engine.analyze('curl -fsSL https://get.docker.com | sudo bash', 'bash');
       assert.strictEqual(res.overallRisk, 'critical');
       assert.ok(res.findings.some((f) => f.id === 'NET001'));
     });

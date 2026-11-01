@@ -1,6 +1,19 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.gitRules = void 0;
+function getGitSubCommand(args) {
+    for (let i = 0; i < args.length; i++) {
+        const arg = args[i];
+        if (arg === '-C' || arg === '-c' || arg === '--exec-path') {
+            i++; // Skip the option argument
+            continue;
+        }
+        if (!arg.startsWith('-')) {
+            return { subCmd: arg.toLowerCase(), subCmdIndex: i };
+        }
+    }
+    return { subCmd: undefined, subCmdIndex: -1 };
+}
 exports.gitRules = [
     {
         id: 'GIT001',
@@ -16,11 +29,11 @@ exports.gitRules = [
         evaluate: (segment) => {
             const cmd = segment.command.toLowerCase();
             if (cmd === 'git') {
-                const subCmd = segment.args[0]?.toLowerCase();
+                const { subCmd, subCmdIndex } = getGitSubCommand(segment.args);
                 if (subCmd === 'reset') {
                     const hasHard = segment.args.some((a) => a.toLowerCase() === '--hard');
                     if (hasHard) {
-                        const targetCommit = segment.args.find((a, idx) => idx > 0 && !a.startsWith('-')) || 'HEAD';
+                        const targetCommit = segment.args.find((a, idx) => idx > subCmdIndex && !a.startsWith('-')) || 'HEAD';
                         return {
                             id: 'GIT001',
                             ruleName: 'Git Hard Reset',
@@ -55,7 +68,7 @@ exports.gitRules = [
         evaluate: (segment) => {
             const cmd = segment.command.toLowerCase();
             if (cmd === 'git') {
-                const subCmd = segment.args[0]?.toLowerCase();
+                const { subCmd } = getGitSubCommand(segment.args);
                 if (subCmd === 'clean') {
                     const hasForce = segment.args.some((a) => /-[a-z]*f/i.test(a) || a.toLowerCase() === '--force');
                     const isDryRun = segment.args.some((a) => /-[a-z]*n/i.test(a) || a.toLowerCase() === '--dry-run');
@@ -95,12 +108,14 @@ exports.gitRules = [
         evaluate: (segment) => {
             const cmd = segment.command.toLowerCase();
             if (cmd === 'git') {
-                const subCmd = segment.args[0]?.toLowerCase();
+                const { subCmd, subCmdIndex } = getGitSubCommand(segment.args);
                 if (subCmd === 'push') {
                     const hasForce = segment.args.some((a) => ['-f', '--force', '--force-with-lease'].includes(a.toLowerCase()) ||
                         (a.startsWith('+') && a.length > 1));
                     if (hasForce) {
-                        const remoteTarget = segment.args.filter((a, idx) => idx > 0 && !a.startsWith('-')).join(' ') || 'remote';
+                        const remoteTarget = segment.args
+                            .filter((a, idx) => idx > subCmdIndex && !a.startsWith('-'))
+                            .join(' ') || 'remote';
                         return {
                             id: 'GIT003',
                             ruleName: 'Git Force Push',
@@ -135,11 +150,11 @@ exports.gitRules = [
         evaluate: (segment) => {
             const cmd = segment.command.toLowerCase();
             if (cmd === 'git') {
-                const subCmd = segment.args[0]?.toLowerCase();
+                const { subCmd, subCmdIndex } = getGitSubCommand(segment.args);
                 if (subCmd === 'branch') {
                     const hasBigD = segment.args.some((a) => a === '-D' || a === '--delete --force');
                     if (hasBigD) {
-                        const branchName = segment.args.find((a, idx) => idx > 0 && !a.startsWith('-')) || 'branch';
+                        const branchName = segment.args.find((a, idx) => idx > subCmdIndex && !a.startsWith('-')) || 'branch';
                         return {
                             id: 'GIT004',
                             ruleName: 'Forced Branch Deletion',
@@ -173,7 +188,7 @@ exports.gitRules = [
         evaluate: (segment) => {
             const cmd = segment.command.toLowerCase();
             if (cmd === 'git') {
-                const subCmd = segment.args[0]?.toLowerCase();
+                const { subCmd } = getGitSubCommand(segment.args);
                 const hasDot = segment.args.some((a) => a === '.' || a === '*');
                 if ((subCmd === 'checkout' && segment.args.includes('--') && hasDot) ||
                     (subCmd === 'restore' && hasDot)) {

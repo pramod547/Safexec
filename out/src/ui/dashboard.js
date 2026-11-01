@@ -39,10 +39,12 @@ class DashboardPanel {
     static currentPanel;
     panel;
     auditLogger;
+    extensionUri;
     disposables = [];
-    constructor(panel, auditLogger) {
+    constructor(panel, auditLogger, extensionUri) {
         this.panel = panel;
         this.auditLogger = auditLogger;
+        this.extensionUri = extensionUri;
         this.update();
         this.panel.onDidDispose(() => this.dispose(), null, this.disposables);
         this.panel.webview.onDidReceiveMessage(async (message) => {
@@ -70,9 +72,10 @@ class DashboardPanel {
         }
         const panel = vscode.window.createWebviewPanel('safexecDashboard', 'Safexec Security Dashboard', column || vscode.ViewColumn.One, {
             enableScripts: true,
-            retainContextWhenHidden: true
+            retainContextWhenHidden: true,
+            localResourceRoots: [vscode.Uri.joinPath(extensionUri, 'media')]
         });
-        DashboardPanel.currentPanel = new DashboardPanel(panel, auditLogger);
+        DashboardPanel.currentPanel = new DashboardPanel(panel, auditLogger, extensionUri);
     }
     update() {
         const stats = this.auditLogger.getStatistics();
@@ -89,6 +92,7 @@ class DashboardPanel {
         }
     }
     getHtmlForWebview(stats, history) {
+        const iconUri = this.panel.webview.asWebviewUri(vscode.Uri.joinPath(this.extensionUri, 'media', 'icon.png'));
         const historyRows = history
             .map((entry) => {
             const badgeColor = entry.riskLevel === 'critical'
@@ -214,9 +218,12 @@ class DashboardPanel {
 </head>
 <body>
   <div class="header">
-    <div>
-      <h1>Safexec Security Dashboard</h1>
-      <p style="opacity: 0.8; margin: 4px 0 0 0;">Safer terminal commands. Smarter execution.</p>
+    <div style="display: flex; align-items: center; gap: 16px;">
+      <img src="${iconUri}" width="52" height="52" alt="Safexec Logo" style="border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.3);" />
+      <div>
+        <h1 style="margin: 0;">Safexec Security Dashboard</h1>
+        <p style="opacity: 0.8; margin: 4px 0 0 0;">Safer terminal commands. Smarter execution.</p>
+      </div>
     </div>
     <div class="actions">
       <button onclick="runProtectedPrompt()">Run Protected Command</button>

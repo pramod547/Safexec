@@ -65,7 +65,7 @@ describe('CommandParser Unit Tests', () => {
         const res = commandParser_1.CommandParser.parse('git commit -m "feat: handle || and && operators"', 'bash');
         assert.strictEqual(res.segments.length, 1);
         assert.strictEqual(res.segments[0].command, 'git');
-        assert.strictEqual(res.segments[0].args[1], 'feat: handle || and && operators');
+        assert.strictEqual(res.segments[0].args[2], 'feat: handle || and && operators');
     });
     it('detects subshells and command substitutions', () => {
         const res1 = commandParser_1.CommandParser.parse('echo $(whoami)', 'bash');

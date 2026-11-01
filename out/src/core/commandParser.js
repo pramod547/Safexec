@@ -48,13 +48,13 @@ class CommandParser {
         const hasDynamicSubstitution = /\$\{?[A-Za-z0-9_]+\}?/.test(trimmed) ||
             /%[A-Za-z0-9_]+%/.test(trimmed) ||
             /\$env:[A-Za-z0-9_]+/i.test(trimmed);
-        const rawSegments = this.splitSegments(trimmed);
+        const rawSegments = this.splitSegments(trimmed, shell);
         const hasPipes = rawSegments.some((s) => s.operator === '|');
         const segments = rawSegments.map((seg) => {
-            const tokens = this.tokenize(seg.text);
+            const tokens = this.tokenize(seg.text, shell);
             let command = tokens.length > 0 ? tokens[0] : '';
             const args = tokens.slice(1);
-            // Handle PowerShell / CMD normalization
+            // Handle PowerShell normalization
             if (shell === 'powershell') {
                 const lowerCmd = command.toLowerCase();
                 if (this.PS_ALIASES[lowerCmd]) {
@@ -77,18 +77,25 @@ class CommandParser {
             hasDynamicSubstitution
         };
     }
-    static splitSegments(input) {
+    static splitSegments(input, shell) {
         const results = [];
         let current = '';
         let inSingleQuote = false;
         let inDoubleQuote = false;
         let inBacktick = false;
         let i = 0;
+        const isWindowsShell = shell === 'powershell' || shell === 'cmd';
         while (i < input.length) {
             const char = input[i];
             const nextChar = input[i + 1];
-            // Handle escape backslash outside single quote
-            if (char === '\\' && !inSingleQuote && i + 1 < input.length) {
+            // Handle escape backslash outside single quote in Unix shells
+            if (!isWindowsShell && char === '\\' && !inSingleQuote && i + 1 < input.length) {
+                current += char + nextChar;
+                i += 2;
+                continue;
+            }
+            // Handle PowerShell backtick escape
+            if (shell === 'powershell' && char === '`' && !inSingleQuote && i + 1 < input.length) {
                 current += char + nextChar;
                 i += 2;
                 continue;
@@ -106,7 +113,7 @@ class CommandParser {
                 i++;
                 continue;
             }
-            if (char === '`' && !inSingleQuote && !inDoubleQuote) {
+            if (char === '`' && !inSingleQuote && !inDoubleQuote && !isWindowsShell) {
                 inBacktick = !inBacktick;
                 current += char;
                 i++;
@@ -153,15 +160,21 @@ class CommandParser {
         }
         return results;
     }
-    static tokenize(input) {
+    static tokenize(input, shell = 'unknown') {
         const tokens = [];
         let current = '';
         let inSingle = false;
         let inDouble = false;
         let i = 0;
+        const isWindowsShell = shell === 'powershell' || shell === 'cmd';
         while (i < input.length) {
             const char = input[i];
-            if (char === '\\' && !inSingle && i + 1 < input.length) {
+            if (!isWindowsShell && char === '\\' && !inSingle && i + 1 < input.length) {
+                current += input[i + 1];
+                i += 2;
+                continue;
+            }
+            if (shell === 'powershell' && char === '`' && !inSingle && i + 1 < input.length) {
                 current += input[i + 1];
                 i += 2;
                 continue;

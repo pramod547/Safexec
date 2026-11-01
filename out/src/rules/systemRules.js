@@ -118,8 +118,8 @@ exports.systemRules = [
             'Do not execute under any circumstances.',
             'Close terminal or script containing this string.'
         ],
-        evaluate: (segment) => {
-            const raw = segment.raw;
+        evaluate: (segment, fullCommand) => {
+            const raw = fullCommand.raw;
             const isForkBomb = /:\s*\(\s*\)\s*\{\s*:\s*\|\s*:\s*&\s*\}\s*;\s*:/i.test(raw) ||
                 /\$0\s*\|\s*\$0\s*&/i.test(raw) ||
                 /%0\s*\|\s*%0/i.test(raw);

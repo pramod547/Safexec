@@ -43,10 +43,10 @@ exports.filesystemRules = [
             }
             // Check Windows / PowerShell Remove-Item on root/drive
             if (cmd === 'remove-item' || cmd === 'rd' || cmd === 'rmdir') {
-                const isRecurse = segment.args.some((a) => /-(r|recurse)/i.test(a) || /\/s/i.test(a));
-                const targets = segment.args.filter((a) => !a.startsWith('-') && !a.startsWith('/'));
-                const isRootTarget = targets.some((t) => ['c:', 'c:\\', 'c:/', '\\', '/', '$env:systemroot', 'c:\\windows'].includes(t.toLowerCase()));
-                if (isRecurse && isRootTarget) {
+                const isRecurse = segment.args.some((a) => /^-[a-z]*r/i.test(a) || /-(recurse)/i.test(a) || /\/s/i.test(a));
+                const targets = segment.args.filter((a) => !a.startsWith('-') && !(a.startsWith('/') && a.length > 1));
+                const isRootTarget = targets.some((t) => ['c:', 'c:\\', 'c:/', '\\', '/', '$home', '$env:systemroot', 'c:\\windows'].includes(t.toLowerCase()));
+                if (isRecurse && (isRootTarget || targets.length === 0)) {
                     return {
                         id: 'FS001',
                         ruleName: 'Root / System Directory Deletion',
@@ -54,7 +54,7 @@ exports.filesystemRules = [
                         riskLevel: 'critical',
                         title: 'Critical Windows System Drive Deletion',
                         description: 'This command attempts to recursively delete the system root or drive.',
-                        affectedTarget: targets.join(' '),
+                        affectedTarget: targets.join(' ') || 'root',
                         recommendedChecks: [
                             'Verify you are not wiping system drives or user profiles.',
                             'Check destination path before proceeding.'
@@ -101,12 +101,12 @@ exports.filesystemRules = [
                     };
                 }
             }
-            // PowerShell Remove-Item -Recurse -Force
+            // PowerShell Remove-Item -Recurse -Force or aliased rm -rf
             if (cmd === 'remove-item') {
-                const hasRecurse = segment.args.some((a) => /-(r|recurse)/i.test(a));
-                const hasForce = segment.args.some((a) => /-(f|force)/i.test(a));
+                const hasRecurse = segment.args.some((a) => /^-[a-z]*r/i.test(a) || /-(recurse)/i.test(a));
+                const hasForce = segment.args.some((a) => /^-[a-z]*f/i.test(a) || /-(force)/i.test(a));
                 if (hasRecurse && hasForce) {
-                    const targets = segment.args.filter((a) => !a.startsWith('-'));
+                    const targets = segment.args.filter((a) => !a.startsWith('-') && !(a.startsWith('/') && a.length > 1));
                     return {
                         id: 'FS002',
                         ruleName: 'Recursive Forced File Deletion',

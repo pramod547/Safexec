@@ -1,0 +1,153 @@
+{
+  "name": "safexec",
+  "displayName": "Safexec",
+  "description": "Safer terminal commands. Smarter execution. Risk analysis and execution guard for VS Code.",
+  "version": "0.1.0",
+  "publisher": "safexec",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "Security"
+  ],
+  "keywords": [
+    "security",
+    "terminal",
+    "safety",
+    "command guard",
+    "cli protection"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "safexec.analyzeCommand",
+        "title": "Safexec: Analyze a Command",
+        "category": "Safexec"
+      },
+      {
+        "command": "safexec.runProtected",
+        "title": "Safexec: Run Protected Command",
+        "category": "Safexec",
+        "icon": "$(shield)"
+      },
+      {
+        "command": "safexec.showDashboard",
+        "title": "Safexec: Show Security Dashboard",
+        "category": "Safexec",
+        "icon": "$(dashboard)"
+      },
+      {
+        "command": "safexec.showHistory",
+        "title": "Safexec: Show Audit History",
+        "category": "Safexec"
+      },
+      {
+        "command": "safexec.clearHistory",
+        "title": "Safexec: Clear Audit History",
+        "category": "Safexec"
+      }
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "safexec-sidebar",
+          "title": "Safexec",
+          "icon": "media/shield.svg"
+        }
+      ]
+    },
+    "views": {
+      "safexec-sidebar": [
+        {
+          "id": "safexec.findings",
+          "name": "Risk & Findings"
+        },
+        {
+          "id": "safexec.history",
+          "name": "Audit History"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "Safexec",
+      "properties": {
+        "safexec.policy.criticalAction": {
+          "type": "string",
+          "enum": [
+            "deny",
+            "confirm"
+          ],
+          "default": "deny",
+          "description": "Default action for Critical risk commands in Protected Runner."
+        },
+        "safexec.policy.highAction": {
+          "type": "string",
+          "enum": [
+            "confirm",
+            "allow"
+          ],
+          "default": "confirm",
+          "description": "Default action for High risk commands in Protected Runner."
+        },
+        "safexec.policy.mediumAction": {
+          "type": "string",
+          "enum": [
+            "prompt",
+            "allow"
+          ],
+          "default": "prompt",
+          "description": "Default action for Medium risk commands in Protected Runner."
+        },
+        "safexec.terminalMonitor.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable observational monitoring of VS Code integrated terminal commands."
+        },
+        "safexec.history.maxEntries": {
+          "type": "number",
+          "default": 100,
+          "description": "Maximum number of audit history entries to store locally."
+        },
+        "safexec.history.redactSecrets": {
+          "type": "boolean",
+          "default": true,
+          "description": "Automatically redact potential passwords and secret tokens before storing in audit history."
+        },
+        "safexec.ai.enabled": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enable optional advisory AI explanations for analyzed commands."
+        },
+        "safexec.ai.endpoint": {
+          "type": "string",
+          "default": "",
+          "description": "Optional custom endpoint URL for AI explanation provider."
+        },
+        "safexec.ai.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "API key for optional AI explanation provider."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "mocha -r ts-node/register \"test/unit/**/*.test.ts\""
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.0",
+    "@types/vscode": "^1.85.0",
+    "mocha": "^10.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

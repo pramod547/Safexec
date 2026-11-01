@@ -5,11 +5,13 @@ export class DashboardPanel {
   public static currentPanel: DashboardPanel | undefined;
   private readonly panel: vscode.WebviewPanel;
   private readonly auditLogger: AuditLogger;
+  private readonly extensionUri: vscode.Uri;
   private disposables: vscode.Disposable[] = [];
 
-  private constructor(panel: vscode.WebviewPanel, auditLogger: AuditLogger) {
+  private constructor(panel: vscode.WebviewPanel, auditLogger: AuditLogger, extensionUri: vscode.Uri) {
     this.panel = panel;
     this.auditLogger = auditLogger;
+    this.extensionUri = extensionUri;
 
     this.update();
 
@@ -51,11 +53,12 @@ export class DashboardPanel {
       column || vscode.ViewColumn.One,
       {
         enableScripts: true,
-        retainContextWhenHidden: true
+        retainContextWhenHidden: true,
+        localResourceRoots: [vscode.Uri.joinPath(extensionUri, 'media')]
       }
     );
 
-    DashboardPanel.currentPanel = new DashboardPanel(panel, auditLogger);
+    DashboardPanel.currentPanel = new DashboardPanel(panel, auditLogger, extensionUri);
   }
 
   public update(): void {
@@ -77,6 +80,10 @@ export class DashboardPanel {
     stats: ReturnType<AuditLogger['getStatistics']>,
     history: ReturnType<AuditLogger['getHistory']>
   ): string {
+    const iconUri = this.panel.webview.asWebviewUri(
+      vscode.Uri.joinPath(this.extensionUri, 'media', 'icon.png')
+    );
+
     const historyRows = history
       .map((entry) => {
         const badgeColor =

@@ -30,3 +30,4 @@ All notable changes to the "safexec" extension will be documented in this file.
   - Side bar tree views for Findings and Audit History.
 - **Advisory AI Support**:
   - Opt-in explanation provider that cannot override local deterministic security policies.
+

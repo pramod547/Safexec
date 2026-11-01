@@ -82,3 +82,4 @@ describe('PolicyEngine Unit Tests', () => {
     assert.strictEqual(engine.evaluate(highRes), 'allow');
   });
 });
+

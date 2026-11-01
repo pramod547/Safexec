@@ -200,3 +200,4 @@ export const gitRules: Rule[] = [
     }
   }
 ];
+

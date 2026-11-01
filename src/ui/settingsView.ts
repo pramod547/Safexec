@@ -77,3 +77,4 @@ export class HistoryTreeItem extends vscode.TreeItem {
     }
   }
 }
+

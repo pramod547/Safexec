@@ -92,3 +92,4 @@ export class FindingTreeItem extends vscode.TreeItem {
     }
   }
 }
+

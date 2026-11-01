@@ -37,3 +37,4 @@ export class RiskScorer {
     return { level: highestLevel, score };
   }
 }
+

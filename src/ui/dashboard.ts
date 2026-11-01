@@ -294,3 +294,4 @@ export class DashboardPanel {
       .replace(/'/g, '&#039;');
   }
 }
+

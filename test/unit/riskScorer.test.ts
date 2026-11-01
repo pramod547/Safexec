@@ -66,3 +66,4 @@ describe('RiskScorer Unit Tests', () => {
     assert.strictEqual(res.score, 45);
   });
 });
+

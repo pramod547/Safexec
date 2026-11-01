@@ -42,3 +42,4 @@ describe('SecretRedactor Unit Tests', () => {
     assert.strictEqual(SecretRedactor.redact(raw), raw);
   });
 });
+

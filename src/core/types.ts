@@ -88,3 +88,4 @@ export interface SafexecConfig {
   aiEndpoint?: string;
   aiApiKey?: string;
 }
+

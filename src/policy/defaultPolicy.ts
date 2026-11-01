@@ -9,3 +9,4 @@ export const DEFAULT_SAFEXEC_CONFIG: SafexecConfig = {
   redactSecrets: true,
   aiEnabled: false
 };
+

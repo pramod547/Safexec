@@ -224,3 +224,4 @@ export class SafeRunner {
     this.protectedTerminal.sendText(command, true);
   }
 }
+
